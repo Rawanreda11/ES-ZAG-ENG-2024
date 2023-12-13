@@ -5,9 +5,9 @@ int main() {
     char sentence[100];
     int count = 0;
     printf("Enter a sentence:\n");
-    scanf("%s\n", &sentence);
+    fgets(sentence, sizeof(sentence), stdin);
 
-    int n = strlen(sentence);
+    int n = sizeof(sentence);
     int freq[10] = {0};
     printf("frequency of digits:\n");
 
